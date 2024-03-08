@@ -4,7 +4,7 @@ config NETHUNTER_SUPPORT
 
 	bool "Basic nethunter support"
 
-	default n
+	default y
 
 	help
 
@@ -393,6 +393,8 @@ config NETHUNTER_WIFI_DRIVERS_SUPPORT
 
 	select MT7601U
 
+	select MT7601
+	
 	select WLAN_VENDOR_RALINK
 
 	select RT2X00
